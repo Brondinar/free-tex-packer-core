@@ -29,7 +29,11 @@
 						"y": {{frame.y}},
 						"w": {{frame.w}},
 						"h": {{frame.h}}
-					}
+					}{{#pivot}},
+					"pivot": {
+						"x": {{pivot.x}},
+						"y": {{pivot.y}}
+					}{{/pivot}}
 				}{{^last}},{{/last}}
 				{{/rects}}
 			]

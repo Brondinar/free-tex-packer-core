@@ -136,6 +136,7 @@ function prepareData(data, options) {
 			last: index === data.length - 1,
 			rotated: item.rotated,
 			trimmed: trimmed,
+			...(item.image.overridedFields ?? {}),
 		};
 	});
 
